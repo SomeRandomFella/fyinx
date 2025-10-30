@@ -120,7 +120,7 @@ fetch('js/json/g.json')
                 const card = document.createElement('div');
                 card.className = 'game-card';
                 card.innerHTML = `
-                    <img src="/img/games/${game.id}.webp" alt="${game.name}" onerror="this.src='/img/games/default.webp'">
+                    <img src="img/games/${game.id}.webp" alt="${game.name}" onerror="this.src='img/games/default.webp'">
                     <span>${game.name}</span>
                 `;
                 card.addEventListener('click', () => openGame(game.name, game.url));
