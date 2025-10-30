@@ -730,3 +730,31 @@ nav a.active {
         height: 100px;
     }
 }
+.discord {
+    text-align: center;
+    margin: 0px 0;
+}
+
+.discord-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #5865F2;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.discord-button:hover {
+    background-color: #4752C4;
+    transform: scale(1.05);
+}
+
+.discord-icon {
+    width: 24px;
+    height: 24px;
+}
