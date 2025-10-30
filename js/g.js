@@ -17,10 +17,10 @@ fetch('js/json/g.json')
                 card.className = 'game-card';
                 
                 const img = document.createElement('img');
-                img.src = `/img/games/${game.id}.webp`;
+                img.src = `img/games/${game.id}.webp`;
                 img.alt = game.name;
                 img.onerror = function() {
-                    this.src = '/img/games/default.webp';
+                    this.src = 'img/games/default.webp';
                 };
                 
                 const name = document.createElement('span');
