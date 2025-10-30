@@ -1,4 +1,4 @@
-fetch('/js/json/g.json')
+fetch('js/json/g.json')
     .then(response => response.json())
     .then(games => {
         const container = document.getElementById('games-container');
