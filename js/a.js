@@ -107,7 +107,7 @@ document.querySelectorAll('nav a').forEach(link => {
     if (link.getAttribute('href') === currentPage) link.classList.add('active');
 });
 
-fetch('/js/json/g.json')
+fetch('js/json/g.json')
     .then(res => res.json())
     .then(games => {
         const gameCountEl = document.getElementById('gameCount');
