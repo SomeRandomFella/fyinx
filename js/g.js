@@ -1,3 +1,4 @@
+//findsmy games in my json file, loading them one by one.
 fetch('js/json/g.json')
     .then(response => response.json())
     .then(games => {
@@ -10,7 +11,7 @@ fetch('js/json/g.json')
         const total = games.length;
         
         statusEl.textContent = `loading ${loaded}/${total} games...`;
-        
+        //loads the games on a grid
         games.forEach((game, index) => {
             setTimeout(() => {
                 const card = document.createElement('div');
@@ -46,6 +47,7 @@ fetch('js/json/g.json')
         
         container.appendChild(grid);
     })
+    //this shows if the games broke or smth.
     .catch(error => {
         console.error('error loading games:', error);
         document.getElementById('gameStatus').textContent = 'error loading games';
