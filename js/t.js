@@ -3,7 +3,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const originalIcon = "n.png";
   document.addEventListener("visibilitychange", () => {
     if (document.hidden) {
-      document.title = "Google Classroom";
+      document.title = "Home";
       updateFavicon("img/i.ico");
     } else {
       document.title = originalTitle;
